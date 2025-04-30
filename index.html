@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bside">
+            <img src="images/background.jpeg" class="bg-img">
+            <div class = "logobox">
+                <img src="images/logo.png" class="logo">
+                <p id="logotext">ODIN</p>
+            </div>
+        </div>
+        <div class="fside">
+                <div class="description">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your
+                        deepest dreams. Sign up <span>now</span> to get started.
+                    </p>
+                    <p>You <span>know</span> you want to.</p>
+                </div>
+                <div class="form">
+                    <div class="formbox">
+                      <form id = "signup-form" action="example.com/oath" method="post">
+                        <h1>Let's do this!</h1>
+                  
+                        <div class="form-row">
+                          <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Joshua" required>
+                          </div>
+                          <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Zhu" required>
+                          </div>
+                        </div>
+                  
+                        <div class="form-row">
+                          <div class="input-group">
+                            <label for="e-mail">Email</label>
+                            <input type="email" id="e-mail" placeholder="example@gmail.com" required>
+                          </div>
+                          <div class="input-group">
+                            <label for="p-number">Phone Number</label>
+                            <input type="text" id="p-number" placeholder="XXX-XXX-XXXX" required pattern="\d{3}-\d{3}-\d{4}">
+                          </div>
+                        </div>
+                  
+                        <div class="form-row">
+                          <div class="input-group">
+                            <label for="p-word">Password</label>
+                            <input type="password" id="p-word" required>
+                          </div>
+                          <div class="input-group">
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" id="confirm" required>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                <div class="done">
+                    <button type="submit" form = "signup-form"> Create Account</button>
+                    <p>Already have an account? <a href="/*">Log in</a></p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

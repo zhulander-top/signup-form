@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Norse;
+    src: url(/home/zhulander/.local/share/fonts/Norse-Bold.otf);
+}
+*{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    box-sizing:border-box;
+}
+body, html{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    min-height: 100vh;
+}
+.bside{
+    width:40vw;
+    position:relative;
+}
+img{
+    display:block;
+}
+.bg-img{
+    width:100%;
+    height:100%;
+
+    object-fit: cover;
+}
+.logobox {
+    display:flex;
+    position: absolute;
+    justify-content:center;
+    align-items:center;
+    gap: 2rem;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    height: 15%;
+    background-color:rgb(51,51,51,0.75);
+    overflow:hidden;
+}
+#logotext{
+    font-family: Norse;
+    color:white;
+    font-size:6rem;
+    line-height:1;
+    margin:0;
+
+}
+.logo{
+    height:100%;
+    width:auto;
+}
+.fside{
+    display: flex;
+    flex-direction: column;
+}
+.description p:first-of-type{
+    margin-top : 5%;
+}
+span{
+    font-style:italic;
+}
+.description p {
+    font-size: 1.75em;
+    font-weight:bold;
+    width:58%;
+    padding: 10px;
+    
+    margin-left : 3%;
+}
+.formbox {
+    margin-left: 3%;
+    width: 58%;
+    padding: 30px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.input-group input {
+    padding: 0.5em;
+    font-size: 1em;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #1E90FF;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+input:focus:invalid{
+    outline: none;
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+#p-word:invalid, #confirm:invalid {
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.done {
+    margin-left: 3%;
+    margin-top: 2rem;
+}
+
+button[type="submit"] {
+    background-color: #4d653f;
+    color: white;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e5233;
+}
+
+label{
+    display:block;
+    margin-bottom:0.5em;
+}
